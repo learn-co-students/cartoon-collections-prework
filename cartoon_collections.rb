@@ -1,30 +1,30 @@
+def roll_call_dwarves(dwarves)
 
-def roll_call_dwarves(dwarf)
-  dwarf.each_with_index do | name , index |
-    puts "#{index + 1} #{name}"
-  end
-end
-
-def summon_captain_planet(veggie)
-    veggie.collect do |call|
-    call.capitalize + "!"
-  end
+    dwarves.each_with_index() {|dwarf, i| puts "#{i + 1}. #{dwarf}"}
 
 end
 
-def long_planeteer_calls(x)
-  answer = false
-  x.each do |call|
-    if call.length > 4
-      answer = true
-    end
-  end
-    answer
+#
+
+def summon_captain_planet(ele)
+
+    ele.collect() {|ele| ele.capitalize << '!'}
+
 end
 
-def find_the_cheese(cheese)
-  cheese_types = ["cheddar", "gouda", "camembert"]
-  cheese.find do |cheese|
-    cheese_types.include?(cheese)
-  end
+#
+
+def long_planeteer_calls(calls)
+
+    calls.each { |call| return true if call.length > 4}
+
+    return false
+end
+
+#
+
+def find_the_cheese(list)
+
+    list.find {|n| n.downcase == 'cheddar'}
+
 end
