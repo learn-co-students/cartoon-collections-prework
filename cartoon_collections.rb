@@ -16,10 +16,7 @@ end
 def find_the_cheese(groceries)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  cheese_types.each do |cheese|
-    if groceries.include?(cheese)
-      return cheese
-    end
+  groceries.find do |item|
+    cheese_types.include?(item)
   end
-  return nil
 end
