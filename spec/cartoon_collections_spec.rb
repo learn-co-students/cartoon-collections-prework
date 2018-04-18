@@ -52,14 +52,23 @@ describe "Cartoon Collections" do
   end
 
   describe "#find_the_cheese" do
-    it "returns the first element of the array that is cheese" do
-      cheddar_cheese = ["banana", "cheddar", "sock"]
-      expect(find_the_cheese(cheddar_cheese)).to eq 'cheddar'
+    describe "array contains cheese" do 
+      it "returns the first element of the array that is cheese" do
+        cheddar_cheese = ["banana", "cheddar", "sock"]
+        expect(find_the_cheese(cheddar_cheese)).to eq 'cheddar'
+      end
+      
+      it "returns the first element of the array that is cheese" do
+        random_array = ["gouda", "cheddar", "not_cheese"]
+        expect(find_the_cheese(random_array)).to eq "gouda"
+      end
     end
-
+    
     it "returns nil if the array does not contain a type of cheese" do
       no_cheese = ["ham", "cellphone", "computer"]
       expect(find_the_cheese(no_cheese)).to eq nil
     end
+    
+    
   end
 end
