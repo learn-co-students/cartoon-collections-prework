@@ -15,6 +15,5 @@ end
 
 def find_the_cheese(ingredients)
   cheese_types = ["cheddar", "gouda", "camembert"]
-   cheesesInCommon = ingredients & cheese_types
-   return cheesesInCommon[0]
+   (ingredients & cheese_types).first
 end
