@@ -1,27 +1,24 @@
 def roll_call_dwarves(names)
   names.each_with_index { |name, index| puts "#{index + 1} #{name}"}
-  }
-  end
 end
 
 def summon_captain_planet(planeteer_calls)
   planeteer_calls.map { |type| type.capitalize + "!"}
-  end
 end
 
 def long_planeteer_calls(words)
   if words.any? { |x| x.length > 4 }
-    true
+    return true
   else
-    false
+    return false
   end
 end
 
-def find_the_cheese(cheeses)
+def find_the_cheese(list)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  cheeses.find do |type|
-    cheese_types.includ?(type)
+  list.find do |cheese|
+    cheese_types.include?(cheese)
   end
 end
-
+    
