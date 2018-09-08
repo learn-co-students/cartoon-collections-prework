@@ -1,3 +1,5 @@
+# https://www.digitalocean.com/community/tutorials/how-to-use-array-methods-in-ruby
+
 def roll_call_dwarves(names)
   names.each.with_index(1) do |name, index|
     puts "#{index}. #{name}"
@@ -9,14 +11,11 @@ def summon_captain_planet(elements)
 end
 
 def long_planeteer_calls(calls)
-  calls.each do |x|
-    if x.length > 4
-    true
-  end
-  end
+  calls.any? { |e| e.length > 4  }
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
+def find_the_cheese(array)
+  # # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
+  cheese = array.find { |e| e.include?("cheddar")  }
 end
