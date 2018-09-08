@@ -1,5 +1,3 @@
-# https://www.digitalocean.com/community/tutorials/how-to-use-array-methods-in-ruby
-
 def roll_call_dwarves(names)
   names.each.with_index(1) do |name, index|
     puts "#{index}. #{name}"
