@@ -20,13 +20,8 @@ def find_the_cheese (string)
   
   cheese_types = ["cheddar", "gouda", "camembert"]
   
-  if string.include?("cheddar")
-    "cheddar"
-    elsif string.include?("gouda")
-    "gouda"
-    elsif string.include?("camembert")
-    "camembert"
-    else 
-    nil
+
+  string.find do |cheese|
+    cheese_types.include?(cheese)
   end 
 end
