@@ -1,16 +1,22 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+def roll_call_dwarves(array)
+   array.each_with_index { |dwarf, index|
+  puts "#{index + 1}. #{dwarf}"}
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+def summon_captain_planet(veggies)
+  veggies.map {|item| "#{item.capitalize}!"}
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+
+def long_planeteer_calls(planets)
+  if planets.length >= 4
+    return true
+  else return false
+  end
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
+def find_the_cheese(list)
   cheese_types = ["cheddar", "gouda", "camembert"]
-end
+  list.find {|method_item| cheese_types.find {|cheese| cheese ==
+    method_item}}
+  end
