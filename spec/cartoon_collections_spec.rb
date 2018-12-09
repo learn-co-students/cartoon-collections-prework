@@ -45,8 +45,8 @@ describe "Cartoon Collections" do
     end 
     
     it "returns false if all calls are shorter than 4 characters" do 
-    short_planeteer_calls = ["wind", "fire"] 
-    expect(long_planeteer_calls(short_planeteer_calls)).to eq(false) 
+      short_planeteer_calls = ["win", "fir"] 
+      expect(long_planeteer_calls(short_planeteer_calls)).to eq(false) 
     end
     
   end
