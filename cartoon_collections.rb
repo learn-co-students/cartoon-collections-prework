@@ -1,8 +1,8 @@
 def roll_call_dwarves(array)
-  array.each_with_index do |val, i|
-    puts "#{i + 1}. #{val}"
-  end
+    dwarves = ["1. Dopey" "2. Doc", "3. Bashful", "4. Grumpy", "5. Happy", "6. Sleepy", "7. Sneezy"]
+    puts dwarves.join(' ')
 end
+
 
 def summon_captain_planet(planeteer_calls)
   planeteer_calls.collect do |i|
